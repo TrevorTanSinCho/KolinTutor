@@ -35,7 +35,7 @@ fun range(){
 
 }
 
-fun ifexpress(){
+fun main(){//ifexpress(){
     val a = 2
     val b = 5
 
@@ -45,9 +45,12 @@ fun ifexpress(){
         println("b is greater")
         b
     }
-
+    var value = max(a,b)
+    println(value)
     println(maxValue)
 }
+
+fun max(a: Int, b: Int): Int = if(a>b) a else b
 
 fun whenstate(){
     val x = 1
